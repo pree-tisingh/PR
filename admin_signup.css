@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width:700px;
+    margin:40px auto;
+    border:1px solid black;
+}
+.close-btn {
+    position: relative;
+    top:-240px;
+    right: -650px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+
+.left-section {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container img {
+    margin-top: 0px;
+    width: 110px; 
+    border-radius:50%;
+    border:1px solid black;
+}
+
+.login-content {
+    margin-top: 20px;
+   
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-top: -10px; 
+
+}
+.social-icons i{
+    font-size: 18px;
+    color:black;
+    margin-right: 10px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    text-align:left;
+    font-family: 'Poppins',sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-family: 'Poppins',sans-serif;
+    border:2px solid lightgray;
+    background-color: #C4F4DE;
+    box-sizing: border-box;
+}
+.forgot-password {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    font-size: 12px;
+    color: grey;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+#btn{
+font-size: 14px;
+color:#3498db;
+}
+#btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center; 
+}
+
+.radio-buttons label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-top: -10px;
+    display:inline-block
+}
+
+.radio-buttons input {
+    margin-right: 2px;
+    font-size: 12px; 
+
+}
+
+
+.continue-button{
+    background: linear-gradient(to right, #C4F4DE, #46a4d3e8);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    width:100%;
+    border-radius: 30px;
+    font-weight: 550;
+    font-size: 16px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.continue-button:hover {
+    background-color: #2980b9;
+}
+.right-section {
+    width: 50%;
+    text-align: center;
+    height:100%;
+    position: relative;
+}
+.right-section {
+    overflow: hidden; 
+}
+
+.right-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.close-icon:hover {
+    color: #555;
+}

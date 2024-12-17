@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="ring1_buy.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container" id="navbar">
+        <nav>
+            <div class="left">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="BLOG_1.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="img/logoimg.png" alt="logo">
+            </div>
+            <div class="right">
+                <a href="#" class="jwel-icon"><i class="far fa-heart"></i></a>
+                <a href="userprofile.html" class="jwel-icon"><i class="fas fa-user-plus"></i></a>
+                <a href="add_cart.html" class="jwel-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cart-container">
+        <div class="product-img">
+            <img src="img/ring11.webp" alt="cart">
+            <button id="cart">Remove From Cart</button>
+            <button id="cart">Move To Wishlist</button>
+        </div>
+
+        <div class="product-description">
+            <h2>Crystal & Carats</h2>
+            <p>Stylish Golden Necklace Fashionable Round Fisher Gold Plated Necklace Gold-plated Plated Necklace 20carat
+                Gold Necklace</p>
+            <p style="color:rgb(13, 156, 13); font-size: 18px; margin-top: 15px; margin-bottom: 5px;">Special Price</p>
+            <div class="special-price" style="color:brown;">Rs. 75000.00 <span
+                    style="color:brown; font-size: 15px; text-decoration: line-through;">90000.00</span> (25% off)</div>
+            <select id="quantity" name="quantity">
+                <option value="1">Qty 1</option>
+                <option value="2">Qty 2</option>
+                <option value="3">Qty 3</option>
+            </select>
+
+            <div class="container_1">
+                <div class="custom-container">
+                    <h3>Extra</h3>
+                    <p style="font-size: 12px;">Save another 10000 on this order</p>
+                    <div class="apply-text" style="font-size: 12px; padding-top: 0;">Apply Now*</div>
+                </div>
+
+                <div class="custom-container pink-container">
+                    <p style="font-size: 14px;"><i class="fab fa-cc-visa" style="padding-right: 5px; color:black"></i>5% Instant
+                        Discount on SBI Credit Cards</p>
+                </div>
+            </div>
+
+            <div class="container_1">
+                <div class="custom-container">
+                    <p style="text-align: center;">Apply Code For Coupons</p>
+                </div>
+
+                <div class="custom-container pink-container">
+                    <p style="text-align: center; padding-left: 80px;">Bank Offer</p>
+                </div>
+            </div>
+            <div class="price">
+                <div class="delivery-section">
+                    <div class="deliver-to"> <i class="fas fa-map-marker-alt"></i> Deliver to:</div>
+                    <div class="pin">
+                        <input type="text" class="delivery-input" placeholder="Enter Pincode">
+                        <button class="check-button">Check</button>
+                    </div>
+                    <div class="expected-delivery">Delivery by 21 Dec, Thursday</div>
+                    <div class="expected-delivery" style="margin-top: 10px;">Free Delivery<span id="red"> T&C*
+                            applied</span></div>
+
+
+
+                </div>
+                <div class="order-summary-section">
+                    <div class="order-summary-title"><h3>Order Summary</h3></div>
+                    <div class="order-summary-item">
+                        <span>Subtotal:</span>
+                        <span>Rs 10000</span>
+                    </div>
+                    <div class="order-summary-item">
+                        <span>Sale Discount:</span>
+                        <span>Rs 2500</span>
+                    </div>
+                    <div class="order-summary-item">
+                        <span>Coupon Discount:</span>
+                        <span>Rs 500</span>
+                    </div>
+                    <div class="order-summary-item">
+                        <span>Delivery Charge:</span>
+                        <span id="green">Free</span>
+                    </div>
+                    <div class="order-summary-item" id="total">
+                        <span>TOTAL(incl of all taxes):</span>
+                        <span>Rs 7000</span>
+                    </div>
+                    <div class="order-summary-item" id="green">
+                        <span>You Saved:</span>
+                        <span>+ Rs 3000</span>
+                    </div>
+                    <button id="payment">Proceed to Payment</button>
+                </div>
+        
+                </div>
+            </div>
+        </div>
+</body>

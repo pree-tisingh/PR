@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css"> <!-- Add your CSS file -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="registration-container">
+
+        <div class="left-section">
+            <img src="img/d (1).png" alt="Registration Image">
+        </div>
+
+    
+        <div class="right-section">
+            <a href="#" class="close-icon"><i class="fas fa-times"></i></a>
+           <h3>New User Registration</h3>
+            <form action="your-server-endpoint" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="text" name="referral" placeholder="Referral Code (Optional)">
+                <button class="continue-button">Continue</button>
+                <p class="or-text" style="text-align: center; margin-top:5px; margin-bottom: 5px;">or</p>
+               
+                <button class="google-login"><i class="fab fa-google"></i> Login with Google</button>
+                <p class="account" style="font-size: 12px; margin-left: 45px;">Already have an account? <a href="#"
+                        class="signup-link">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

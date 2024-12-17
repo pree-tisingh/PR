@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="necklacecart.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="container" id="navbar">
+        <nav>
+            <div class="left">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="BLOG_1.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="img/logoimg.png" alt="logo">
+            </div>
+            <div class="right">
+                <a href="#" class="jwel-icon"><i class="far fa-heart"></i></a>
+                <a href="userprofile.html" class="jwel-icon"><i class="fas fa-user-plus"></i></a>
+                <a href="add_cart.html" class="jwel-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cart-container">
+        <div class="product-img">
+            <img src="img/pnn.webp" alt="cart">
+            <button id="cart-add"><a href="#">Add To Cart</button>
+            <p id="cart-message" class="top-message" style="display: none;">Item added to cart!</p>
+            <button id="cart"><a href="nc.html">Buy Now</a></button>
+            <div class="icon-img">
+                <div class="offer"><i class="fa fa-star"></i> Trending Designs</div>
+                <div class="offer"><i class="fas fa-tags offer-icon"></i> Best Offer</div>
+            </div>
+            <div class="easy">
+                <div class="offer"> <i class="fas fa-undo"></i> Easy Return</div>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <div class="breadcrumb">
+                <p>Home > Shop > Product > Neckalce</p>
+            </div>
+            <h2>Crystal & Carats</h2>
+            <p>Stylish Necklace Fashionable Round Fisher Gold Plated Ring diamond-plated Plated Necklace.</p>
+            <div class="special-price">Special Price: 95000.00 <span
+                    style="color: #020202; text-decoration: line-through;">1,25000.00</span> (35% off)</div>
+            <div class="star">
+                <button class="check-star">4 <i class="fa fa-star"></i></button>
+                <p>1500 ratings and 300 reviews</p>
+            </div>
+            <p style="color:Brown;">Available Offers</p>
+            <div class="offer"><i class="fas fa-gift offer-icon"></i> Bank Offer10% off on HDFC Bank Credit Card EMI
+                Transactions, up to ₹1,500 on orders of ₹7,500 and above <span id="red">T&C</span></div>
+            <div class="offer"><i class="fas fa-truck offer-icon"></i> Bank Offer10% off on Bank of Baroda Credit Card
+                Txns, up to ₹1,500 on orders of ₹5,000 and above <span id="red">T&C</span></div>
+            <div class="offer"><i class="fas fa-tags offer-icon"></i> Special PriceGet extra 14% off (price inclusive of
+                cashback/coupon) <span id="red">T&C</span>
+                +5 more offers</div>
+
+            <div class="delivery-section">
+                <div class="deliver-to"> <i class="fas fa-map-marker-alt"></i> Deliver to:</div>
+                <input type="text" class="delivery-input" placeholder="Enter Pincode">
+                <button class="check-button">Check</button>
+                <div class="expected-delivery">Delivery by 21 Dec, Thursday | Free Delivery<span id="red"> T&C*
+                        applied</span></div>
+                <div class="dropdown-section">
+                    <div class="dropdown">
+                        <select id="product-details">
+                            <option value="option1">Product Details</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                        <div class="info">
+                            <p>Know your products authenticity</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <select id="read-reviews">
+                            <option value="option1">Read Reviews</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                        <div class="info">
+                            <p>1500 ratings and 300 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        const item = document.getElementById('cart-add');
+        const message = document.getElementById('cart-message');
+
+        item.addEventListener('click', function () {
+            showMessage();
+        });
+
+        function showMessage() {
+            message.style.display = 'block';
+
+
+            setTimeout(function () {
+                hideMessage();
+            }, 2000);
+        }
+
+        function hideMessage() {
+            message.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

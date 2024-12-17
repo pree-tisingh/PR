@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocassion</title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="container" id="navbar">
+        <nav>
+            <div class="left">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="BLOG_1.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="img">
+                <img src="img/logoimg.png" alt="logo">
+            </div>
+            <div class="right">
+                <div class="profile-info">
+                    <i class="fas fa-user-circle"></i>
+                    <div>Admin</div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+
+                            <div>
+                                <h2><i class="fas fa-user-circle" style="margin-left: 65px; font-size: 45px;"></i></h2>
+                                <h5 style="font-family: 'Poppins,sans-serif'; margin-left: 40px; margin-top: 20px;">
+                                    Preeti Singh</h5>
+                                <h5 style="margin-left: 60px;">Admin</h5>
+                                <p style="font-size: 16px;margin-top: 25px; font-family: 'Ubuntu',sans-serif;">Email:
+                                    preeti@gmail.com</p>
+                                <p style="font-size: 16px; margin-top: 10px; font-family: 'Ubuntu',sans-serif;">Contact:
+                                    +1234567890</p>
+                                <p style="font-size: 16px; margin-top: 10px; font-family: 'Ubuntu',sans-serif;">Country:
+                                    India</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="profile-container">
+       
+        <div class="side-menu">
+            <div class="subheading" id="product"><a href="admin_board.html">Product</a></div>
+            <div class="subheading" style="margin-left: 30px; "
+                style="margin-top: 20px; margin-left: 30px;"><a href="category.html">Categories</a></div>
+            <div class="subheading" style="margin-left: 30px; color:brown; text-decoration: underline;"><a href="slider.html">Slider Images</a></div>
+            <div class="subheading" style="margin-left: 30px;"><a href="customer.html">Customers</a></div>
+            <div class="subheading" style="margin-left: 30px;"><a href="vieworder.html">View Orders</a></div>
+            <div class="subheading" style="margin-left: 30px;"><a href="method.html">View Payments</a></div>
+
+        </div>
+
+        <div class="main-content">
+            <div class="personal-info-container">
+                <div class="heading"
+                    style="font-size: 24px; font-family:'Poppins,sans-serif'; width:900px; margin-top: 18px; color:black; margin-bottom: 35px; font-weight: normal; text-align: center; background-color: rgb(225, 145, 145); padding:10px;">
+                    Insert Category</div>
+                <div class="insert-product-section">
+                    <form action="#" method="#" id="product-form">
+                        <div class="info">
+                            <label for="product-keyword">Slider Name:</label>
+                            <select id="product-keyword" name="product-keyword">
+
+                                <option value="keyword1">Home</option>
+                                <option value="keyword2">Shop</option>
+                                <option value="keyword3">Product</option>
+                                <option value="keyword3">Blog </option>
+
+                            </select>
+                        </div>
+                        <div class="info">
+                            <label for="product-image">Choose Slider Image:</label>
+                            <div>
+                                <input type="file" id="product-image" name="product-image" accept="image/*"
+                                    style="margin-left: 90px;">
+
+                            </div>
+                        </div>
+
+                        <button type="submit">Insert Image</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            var modal = document.getElementById('myModal');
+            var profileInfo = document.querySelector('.profile-info');
+
+            profileInfo.addEventListener('click', function (event) {
+                event.stopPropagation(); 
+                modal.style.display = 'block';
+            });
+
+            window.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+        });
+    </script>
+</body>

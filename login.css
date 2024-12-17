@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    margin: 0 auto;
+    background-color: #E0C4C4;
+    width: 60%;
+  }
+  
+  .left-side {
+    flex-shrink: 0;
+  }
+  
+  .left-side img {
+    width: 295px;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px; 
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 140px;
+    margin-top: 20px;
+    border: none;
+  }
+  
+
+    button {
+        padding: 0;
+        cursor: pointer;
+        font-size: 20px;
+        background: none;
+        color: #D27F7F;
+        border: none;
+        outline: none;
+        font-weight: 550;
+      }
+  
+  
+  .active {
+    color: black;
+    font-weight: 550;
+    border-bottom: 2px solid brown;
+  }
+  .hori-1{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 20px; 
+  }
+  
+  .signup-content {
+    text-align: center;
+    max-width: 400px;
+    font-size: 16px;
+    margin-top: 20px; 
+    color:black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  input::placeholder {
+    color: #d85757;
+    font-size: 16px;
+    font-weight: normal; 
+  }
+  
+  button[type="submit"] {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    width:100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #d06f6f;
+  }
+  .login-link {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold; 
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  .account{
+    color:black;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 260px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333; 
+}
+.signup-link{
+    color:brown;
+}
+.google-login{
+    background-color:orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    width:100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.google-login i {
+    margin-right: 10px; 
+}
+
+.google-login:hover {
+    background-color: #c1764a;
+}
+#login{
+    background-color: white;
+}
+#login input{
+    border-bottom: 1px solid #d85757;
+}
+#login .hori-1{
+    background-color: #d06f6f;
+}

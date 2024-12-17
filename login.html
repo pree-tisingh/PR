@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="left-side">
+            <img src="img/login.jpg" alt="Logo">
+        </div>
+
+        <div class="right-side">
+            <div class="buttons">
+                <button class="active">Sign Up</button>
+                <button>Login</button>
+            </div>
+
+            <div class="hori-1"></div>
+
+            <div class="signup-content">
+                <p>Sign up & get Rs. 500 off* coupon code for your first purchase!</p>
+
+                <form action="#" method="#">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone No." required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password"
+                        required>
+                    
+                    <button type="submit">Sign Up</button>
+
+                </form>
+                <p class="account">Already have an account? <a href="#" class="login-link">Login now</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" id="login">
+        
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+
+        <div class="left-side">
+            <img src="img/login.jpg" alt="Logo">
+        </div>
+
+        <div class="right-side">
+            <div class="buttons">
+                <button>Login</button>
+                <button class="active">Sign Up</button>
+            </div>
+
+            <div class="hori-1"></div>
+
+            <div class="signup-content">
+                <p>Login to your account</p>
+
+                <form action="login-handler.php" method="post">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p style="font-size: 12px;">Forgot Password?</p>
+                <p class="or-divider">Or</p>
+
+                <button class="google-login"><i class="fab fa-google"></i> Login with Google</button>
+                <p class="account">Don't have an account? <a href="#" class="signup-link">Sign Up now</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+</body>
+
+</html>

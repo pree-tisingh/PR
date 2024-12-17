@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <script src="https://kit.fontawesome.com/8235132bce.js" crossorigin="anonymous"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <div class="left-section">
+            <div class="logo-container">
+                <img src="img/d (1).png" alt="Logo">
+            </div>
+            <div class="box">
+                <div class="login-content">
+                    <div class="login-header">
+                        <h3>Login</h3>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <label for="email">Email/Mobile:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email/mobile">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="radio-buttons">
+                        <label for="user-login">
+                            <input type="radio" id="user-login" name="login-type" checked>
+                            User Login
+                        </label>
+                        <label for="admin-login">
+                            <input type="radio" id="admin-login" name="login-type">
+                            Admin Login
+                        </label>
+                    </div>
+
+                    <button class="continue-button">Login</button>
+                    <p style="font-size: 12px; margin-top: 10px;">Not a member?<span id="btn"> Sign Up</span></p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="welcome-text">
+                <h2>Welcome to the login</h2>
+            </div>
+            <div class="signup-section">
+                <p>Don't have an account?</p>
+                <button class="signup-button">Sign Up</button>
+               
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>

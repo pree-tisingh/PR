@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.registration-container {
+    display: flex;
+    height: 90vh;
+    width: 750px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.left-section img {
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.close-icon:hover {
+    color: #555;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #C4F4DE;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+
+    box-sizing: border-box;
+}
+
+button {
+    background: linear-gradient(to right, #C4F4DE, #46a4d3e8);
+    width: 100%;
+    font-size: 16px;
+    color: black;
+    padding: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+.google-login i {
+    margin-right: 10px;
+    color: black;
+}
+
+.google-login:hover {
+    background-color: #c1764a;
+}
+
+.signup-link {
+    font-size: 14px;
+    color: #3498db;
+}
+.close-btn {
+    position: relative;
+    top:-240px;
+    right: -650px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
